@@ -12,13 +12,13 @@ const mongoose = require('mongoose')
 
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 
 console.log(process.env.NODE_ENV)
 connectDB()
 
 
-app.use(logger)
+//app.use(logger)
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors(corsOptions))
